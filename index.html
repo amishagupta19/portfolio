@@ -19,29 +19,49 @@
 </div>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">Amisha Gupta</a>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">Amisha Gupta</a>
 
-            
-            
-            
+    <!-- Mobile Theme Toggle (outside menu) -->
+    <button id="theme-toggle-mobile" class="btn btn-outline-light d-lg-none me-2">
+      <i class="fas fa-moon"></i>
+    </button>
 
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-                </ul>
-                <!-- Theme Toggle Button -->
-                <button id="theme-toggle" class="btn btn-outline-light ms-3"><i class="fas fa-moon"></i></button>
-            </div>
-        </div>
-    </nav>
+    <!-- Toggler / Hamburger -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto d-flex align-items-center">
+        <!-- Desktop Theme Toggle -->
+        <li class="nav-item d-none d-lg-block">
+          <button id="theme-toggle-desktop" class="btn btn-outline-light me-3">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 </header>
 
 
@@ -230,5 +250,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
